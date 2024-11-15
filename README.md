@@ -1,3 +1,5 @@
-# personal website at fangx.ing
+# Personal Website - fangx.ing
 
-built with astro and <3 
+Welcome to the repository for my personal website, **fangx.ing**! Built with [Astro](https://astro.build/) and ❤️.
+
+Visit it [here](https://fangx.ing)
