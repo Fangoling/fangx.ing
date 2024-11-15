@@ -1,3 +1,8 @@
+---
+import '../styles/colors.css'
+import Icon from '../components/Icon.astro'
+---
+
 <div class="projects-column">
     <h1>
         projects
@@ -5,7 +10,7 @@
     <div class="project-link">
         <a href="https://tarc-fitness.com">
             <h2>tarc-fitness.com</h2>
-            <h4>https://tarc-fitness.com</h4>
+            <h4>https://tarc-fitness.com <Icon class="link-icon"/></h4>
             <h3>Homepage of Tarc-fitness</h3>
         </a>
     </div>
@@ -16,14 +21,14 @@
     <div class="project-link">
         <a href="https://github.com/Fangoling/BrainRotGPT">
             <h2>BrainRot GPT</h2>
-            <h4>https://github.com/Fangoling/BrainRotGPT</h4>
+            <h4>https://github.com/Fangoling/BrainRotGPT<Icon class="link-icon"/></h4>
             <h3>Summarize Meetings to BrainRot content</h3>
         </a>
     </div>
     <div class="project-link">
         <a href="https://github.com/Fangoling/Hey-Exercise">
         <h2>Hey Exercise!</h2>
-        <h4>https://github.com/Fangoling/Hey-Exercise</h4>
+        <h4>https://github.com/Fangoling/Hey-Exercise<Icon class="link-icon"/></h4>
         <h3>iOS app to track exercises and workouts</h3>
         </a>
     </div>
@@ -36,19 +41,28 @@
         gap: 20px;
     }
     .project, .project-link{
-        border-left: solid darkgreen 2px;
+        border-left: solid var(--pakistan-green) 2px;
         padding-left: 8px;
     }
+    .project:hover, .project-link:hover{
+        border-left: solid var(--forest-green) 2px;
+    }
     .project-link a {
-        color: green;
+        color: var(--pakistan-green);
         text-decoration: none;
         font-weight: bold;
     }
-    .project-link h4 {
-        color: lightgreen;
+    .project-link h2, h3 {
+        color: var(--dark-spring-green);
     }
-    .project-link:hover,
-    .project-link:hover * {
-        color: green;
+    .project-link:hover h2{
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    :global(.link-icon){
+        visibility: hidden;
+    }
+    .project-link:hover :global(.link-icon) {
+        visibility: visible;
     }
 </style>
