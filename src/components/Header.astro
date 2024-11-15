@@ -15,4 +15,11 @@ import HeroAscii from "./HeroAscii.astro";
         display: flex;
         gap: 20;
     }
+    /* Responsive layout change */
+    @media (max-width: 768px) { /* Adjust the width as needed */
+        .horizontal-outer {
+            flex-direction: column; /* Switches to a vertical layout on smaller screens */
+            align-items: center; /* Optional: Center content if desired in column layout */
+        }
+    }
 </style>
