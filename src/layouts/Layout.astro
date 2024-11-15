@@ -1,7 +1,4 @@
 ---
-import Header from '../components/Header.astro';
-import Projects from '../components/Projects.astro';
-import SocialLinks from '../components/SocialLinks.astro'
 
 interface Props {
 	title: string;
@@ -22,9 +19,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header/>
-		<Projects/>
-		<SocialLinks/>
+		<slot/>
 	</body>
 </html>
 <style is:global>
