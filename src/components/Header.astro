@@ -1,20 +1,31 @@
 ---
 import HeroAscii from "./HeroAscii.astro";
+import SocialLinks from "./SocialLinks.astro";
 ---
 
 <div class="horizontal-outer">
     <HeroAscii/>
     <div class="description">
-        <h1>hi, i am fangxing</h1>
-        <h2>a software engineer studying computer science at TUM</h2>
-
+        <h1>i am fangxing</h1>
+        <h2>a software engineer studying computer science at TUM.
+            <br/><br/>i like movies and card games</h2>
     </div>
 </div>
 <style>
     .horizontal-outer{
         display: flex;
-        gap: 20;
+        gap: 20px;
+        align-items: flex-start;
     }
+    .description{
+        display: flex;
+        flex-direction: column;
+        color: var(--forest-green);
+        gap: 20px;
+    }
+    .description h1 {
+        margin: 0; /* Remove default margins */
+}
     /* Responsive layout change */
     @media (max-width: 768px) { /* Adjust the width as needed */
         .horizontal-outer {

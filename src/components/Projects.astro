@@ -9,25 +9,45 @@ import Icon from '../components/Icon.astro'
     </h1>
     <div class="project-link">
         <a href="https://tarc-fitness.com">
-            <h2>tarc-fitness.com</h2>
-            <h4>https://tarc-fitness.com <Icon class="link-icon"/></h4>
-            <h3>Homepage of Tarc-fitness</h3>
+        <div class="project-title">
+            <h2>
+                tarc-fitness.com
+            </h2>
+            <div class="online-banner">ONLINE</div>
+        </div>
+        <h4>https://tarc-fitness.com <Icon class="link-icon"/></h4>
+        <h3>Homepage of Tarc-fitness</h3>
         </a>
     </div>
     <div class="project">
-        <h2>fangx.ing</h2>
+        <div class="project-title">
+            <h2>
+                fangx.ing
+            </h2>
+            <div class="online-banner">ONLINE</div>
+        </div>
         <h3>Personal Website</h3>
     </div>
     <div class="project-link">
         <a href="https://github.com/Fangoling/BrainRotGPT">
-            <h2>BrainRot GPT</h2>
-            <h4>https://github.com/Fangoling/BrainRotGPT<Icon class="link-icon"/></h4>
-            <h3>Summarize Meetings to BrainRot content</h3>
+        <div class="project-title">
+            <h2>
+                BrainRot GPT
+            </h2>
+            <div class="dev-banner">IN DEV</div>
+        </div>
+        <h4>https://github.com/Fangoling/BrainRotGPT<Icon class="link-icon"/></h4>
+        <h3>Summarize Meetings to BrainRot content</h3>
         </a>
     </div>
     <div class="project-link">
         <a href="https://github.com/Fangoling/Hey-Exercise">
-        <h2>Hey Exercise!</h2>
+        <div class="project-title">
+            <h2>
+                Hey Exercise!
+            </h2>
+            <div class="dev-banner">IN DEV</div>
+        </div>
         <h4>https://github.com/Fangoling/Hey-Exercise<Icon class="link-icon"/></h4>
         <h3>iOS app to track exercises and workouts</h3>
         </a>
@@ -45,7 +65,7 @@ import Icon from '../components/Icon.astro'
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 20px;
+        gap: 10px;
     }
     .project, .project-link{
         border-left: solid var(--pakistan-green) 2px;
@@ -60,11 +80,12 @@ import Icon from '../components/Icon.astro'
         font-weight: bold;
     }
     h4 {
-        color: var(--pakistan-green);
+        color: var(--dartmouth-green);
     }
     h3 {
-        color: var(--forest-green);
+        color: var(--dark-spring-green);
     }
+    .
     .project-link:hover h2{
         text-decoration: underline;
         text-underline-offset: 2px;
@@ -74,5 +95,23 @@ import Icon from '../components/Icon.astro'
     }
     .project-link:hover :global(.link-icon) {
         visibility: visible;
+    }
+    .dev-banner{
+        color: black;
+        background-color: orange;
+        padding: 1px 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .online-banner{
+        color: black;
+        background-color: green;
+        padding: 1px 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .project-title{
+        display: flex;
+        align-items: center;
     }
 </style>
