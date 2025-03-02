@@ -4,9 +4,6 @@ import Icon from '../components/Icon.astro'
 ---
 
 <div class="projects-column">
-    <h1>
-        projects
-    </h1>
     <div class="project-link">
         <a href="https://tarc-fitness.com">
         <div class="project-title">
@@ -14,20 +11,47 @@ import Icon from '../components/Icon.astro'
                 tarc-fitness.com
             </h2>
             <div class="online-banner">ONLINE</div>
+            <div class="dev-banner">IN DEV</div>
         </div>
         <h4>https://tarc-fitness.com <Icon class="link-icon"/></h4>
         <h3>Homepage of Tarc-fitness</h3>
         </a>
     </div>
+
     <div class="project">
         <div class="project-title">
             <h2>
                 fangx.ing
             </h2>
             <div class="online-banner">ONLINE</div>
+            <div class="dev-banner">IN DEV</div>
         </div>
         <h3>Personal Website</h3>
     </div>
+
+    <div class="project-link">
+        <a href="https://www.linkedin.com/posts/itestra_codingcamp-softwareengineering-teamwork-activity-7175864298890547200-1Xsw">
+        <div class="project-title">
+            <h2>
+                IntelliKick
+            </h2>
+            <div class="online-banner">FINISHED</div>
+        </div>
+        <h4>Coding Camp @ Itestra<Icon class="link-icon"/></h4>
+        <h3>Table football commentator</h3>
+        </a>
+    </div>
+
+    <div class="project">
+        <div class="project-title">
+            <h2>
+                SIEMENS SAFEGUARD
+            </h2>
+            <div class="online-banner">FINISHED</div>
+        </div>
+        <h3>Industrial Hazard Warning App</h3>
+    </div>
+
     <div class="project-link">
         <a href="https://github.com/Fangoling/BrainRotGPT">
         <div class="project-title">
@@ -40,6 +64,7 @@ import Icon from '../components/Icon.astro'
         <h3>Summarize Meetings to BrainRot content</h3>
         </a>
     </div>
+
     <div class="project-link">
         <a href="https://github.com/Fangoling/Hey-Exercise">
         <div class="project-title">
@@ -52,6 +77,7 @@ import Icon from '../components/Icon.astro'
         <h3>iOS app to track exercises and workouts</h3>
         </a>
     </div>
+
 </div>
 <style>
     .project-link h2,
@@ -62,10 +88,10 @@ import Icon from '../components/Icon.astro'
         margin: 8px; /* Reset default margins */
     }
     .projects-column{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 10px;
+        display: grid;
+        gap: 30px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
     }
     .project, .project-link{
         border-left: solid var(--pakistan-green) 2px;
@@ -109,6 +135,7 @@ import Icon from '../components/Icon.astro'
         padding: 1px 10px;
         font-size: 12px;
         font-weight: bold;
+        margin-right: 8px;
     }
     .project-title{
         display: flex;
