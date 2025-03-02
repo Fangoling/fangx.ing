@@ -93,6 +93,11 @@ import Icon from '../components/Icon.astro'
         width: 100%;
         grid-template-columns: 1fr 1fr;
     }
+    @media (max-width: 768px) { /* Adjust the width as needed */
+        .projects-column {
+            grid-template-columns: 1fr;
+        }
+    }
     .project, .project-link{
         border-left: solid var(--pakistan-green) 2px;
         padding-left: 8px;
