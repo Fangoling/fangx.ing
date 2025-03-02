@@ -29,18 +29,13 @@ const { title } = Astro.props;
 		font-size: 12px;
 		background: black;
 		color: var(--dark-spring-green);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
+		width: 100%;
 	}
 	body {
-		max-width: 64rem;
-		width: 100%;
-		border-left: dashed var(--pakistan-green) 1px;
-		border-right: dashed var(--pakistan-green) 1px;
-		padding-left: 10px;
-		padding-right: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	code {
 		font-family:
