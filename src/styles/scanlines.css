@@ -1,0 +1,34 @@
+/* Ensure the element has a positioned context */
+.scanlines {
+    position: relative;
+}
+
+/* Create the scanline overlay */
+.scanlines::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensures it doesn't block clicks */
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.1) 2px,
+        rgba(0, 0, 0, 0.1) 3px
+    );
+    background-size: 100% 3px;
+    z-index: 100;
+    animation: scanlineMove 5s linear infinite;
+}
+
+@keyframes scanlineMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
