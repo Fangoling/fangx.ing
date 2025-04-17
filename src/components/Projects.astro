@@ -17,7 +17,7 @@ import Icon from '../components/Icon.astro'
             <div class="dev-banner">IN DEV</div>
         </div>
         <h4>https://tarc-fitness.com <Icon class="link-icon"/></h4>
-        <h3>Homepage of Tarc-fitness</h3>
+            <h3>Homepage of Tarc-fitness, built with Next.js.</h3>
         </a>
     </div>
 
@@ -29,7 +29,7 @@ import Icon from '../components/Icon.astro'
             <div class="online-banner">ONLINE</div>
             <div class="dev-banner">IN DEV</div>
         </div>
-        <h3>Personal Website</h3>
+        <h3>Personal Website.</h3>
     </div>
 
     <div class="project-link">
@@ -41,30 +41,20 @@ import Icon from '../components/Icon.astro'
             <div class="online-banner">FINISHED</div>
         </div>
         <h4>Coding Camp @ Itestra<Icon class="link-icon"/></h4>
-        <h3>Table football commentator</h3>
+        <h3>Realtime Table football commentator.</h3>
         </a>
     </div>
 
-    <div class="project">
+    <div class="project-link">
+        <a href="https://ase.cit.tum.de/projects/ipraktikum/24w/">
         <div class="project-title">
             <h2>
-                SIEMENS SAFEGUARD
+                Siemens Safeguard
             </h2>
             <div class="online-banner">FINISHED</div>
         </div>
-        <h3>Industrial Hazard Warning App</h3>
-    </div>
-
-    <div class="project-link">
-        <a href="https://github.com/Fangoling/BrainRotGPT">
-        <div class="project-title">
-            <h2>
-                BrainRot GPT
-            </h2>
-            <div class="dev-banner">IN DEV</div>
-        </div>
-        <h4>https://github.com/Fangoling/BrainRotGPT<Icon class="link-icon"/></h4>
-        <h3>Summarize Meetings to BrainRot content</h3>
+        <h4>https://ase.cit.tum.de/projects/ipraktikum/24w/<Icon class="link-icon"/></h4>
+            <h3>Industrial Hazard Warning App. Learn more about it on the project page linked here.</h3>
         </a>
     </div>
 
@@ -77,7 +67,7 @@ import Icon from '../components/Icon.astro'
             <div class="dev-banner">IN DEV</div>
         </div>
         <h4>https://github.com/Fangoling/.dotfiles<Icon class="link-icon"/></h4>
-        <h3>My config files. Neovim btw.</h3>
+        <h3>Neovim btw.</h3>
         </a>
     </div>
 
@@ -90,7 +80,20 @@ import Icon from '../components/Icon.astro'
             <div class="dev-banner">IN DEV</div>
         </div>
         <h4>https://github.com/Fangoling/Hey-Exercise<Icon class="link-icon"/></h4>
-        <h3>iOS app to track exercises and workouts</h3>
+        <h3>iOS app to track exercises and workouts.</h3>
+        </a>
+    </div>
+
+    <div class="project-link">
+        <a href="https://github.com/Fangoling/pokemore">
+        <div class="project-title">
+            <h2>
+                    pokemore
+            </h2>
+            <div class="dev-banner">IN DEV</div>
+        </div>
+        <h4>https://github.com/Fangoling/pokemore<Icon class="link-icon"/></h4>
+            <h3>Pokemore is a collection of experiments and implementations for building language models that generate new names. <br/>Based on by Andrej Kaparthy's makemore.</h3>
         </a>
     </div>
 
@@ -115,22 +118,22 @@ import Icon from '../components/Icon.astro'
         }
     }
     .project, .project-link{
-        border-left: solid var(--pakistan-green) 2px;
+        border-left: solid var(--font) 2px;
         padding-left: 8px;
     }
     .project:hover, .project-link:hover{
-        border-left: solid var(--forest-green) 2px;
+        border-left: solid var(--font) 2px;
     }
     .project-link a {
-        color: var(--pigment-green);
+        color: var(--font);
         text-decoration: none;
         font-weight: bold;
     }
     h4 {
-        color: var(--dartmouth-green);
+        color: var(--font);
     }
     h3 {
-        color: var(--dark-spring-green);
+        color: var(--font);
     }
     .
     .project-link:hover h2{
@@ -152,7 +155,7 @@ import Icon from '../components/Icon.astro'
     }
     .online-banner{
         color: black;
-        background-color: green;
+        background-color: lightgreen;
         padding: 1px 10px;
         font-size: 12px;
         font-weight: bold;
