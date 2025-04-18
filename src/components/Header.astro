@@ -5,12 +5,15 @@ import SocialLinks from "./SocialLinks.astro";
 
 <div class="horizontal-outer">
     <div class="description">
-        <h2>I am a software engineer studying computer science at the Technical University of Munich.
-        <br/><br/>I like watching movies, reading comics and playing card games.</h2>
+        <p>I am a software engineer studying computer science at the Technical University of Munich.
+        <br/><br/>I like watching movies, reading comics and playing card games.</p>
         <SocialLinks/>
     </div>
 </div>
 <style>
+    p {
+        font-size: 18px;
+    }
     .horizontal-outer{
         display: flex;
         gap: 20px;
@@ -22,9 +25,6 @@ import SocialLinks from "./SocialLinks.astro";
         color: var(--font);
         gap: 20px;
     }
-    .description h1 {
-        margin: 0; /* Remove default margins */
-}
     /* Responsive layout change */
     @media (max-width: 768px) { /* Adjust the width as needed */
         .horizontal-outer {
