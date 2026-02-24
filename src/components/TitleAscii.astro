@@ -24,17 +24,15 @@
 </pre>
 	</div>
     <style>
-        .pre {
-            font-family: 'Fira Mono', monospace;
-        }
         .ascii-container {
-            font-size: 28.0px; /* Set font-size very small */
-            font-family: monospace;
+            font-size: 28px;
+            font-family: 'Fira Mono', monospace;
             white-space: pre;
             width: 100%;
             line-height: 28px;
             display: flex;
             justify-content: center;
+            overflow: hidden;
         }
         .container-big {
             display: block;
@@ -43,15 +41,16 @@
             display: none;
         }
 
-        @media (max-width: 768px) { /* Adjust the width as needed */
-        .container-big {
-            display: none;
-        }
-        .container-small {
-            display: block;
-        }
-        .ascii-container {
-            font-size: 12.0px; /* Set font-size very small */
-            line-height: 12px;
+        @media (max-width: 768px) {
+            .container-big {
+                display: none;
+            }
+            .container-small {
+                display: block;
+            }
+            .ascii-container {
+                font-size: 2.5vw;
+                line-height: 2.5vw;
+            }
         }
     </style>
