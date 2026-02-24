@@ -1,56 +1,56 @@
 <div class="ascii-container">
 <pre class="container-big">
-███████╗ █████╗ ███╗   ██╗ ██████╗ ██╗  ██╗   ██╗███╗   ██╗ ██████╗ 
-██╔════╝██╔══██╗████╗  ██║██╔════╝ ╚██╗██╔╝   ██║████╗  ██║██╔════╝ 
+███████╗ █████╗ ███╗   ██╗ ██████╗ ██╗  ██╗   ██╗███╗   ██╗ ██████╗
+██╔════╝██╔══██╗████╗  ██║██╔════╝ ╚██╗██╔╝   ██║████╗  ██║██╔════╝
 █████╗  ███████║██╔██╗ ██║██║  ███╗ ╚███╔╝    ██║██╔██╗ ██║██║  ███╗
 ██╔══╝  ██╔══██║██║╚██╗██║██║   ██║ ██╔██╗    ██║██║╚██╗██║██║   ██║
 ██║     ██║  ██║██║ ╚████║╚██████╔╝██╔╝ ██╗██╗██║██║ ╚████║╚██████╔╝
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
 </pre>
 <pre class="container-small">
-███████╗ █████╗ ███╗   ██╗ ██████╗ 
-██╔════╝██╔══██╗████╗  ██║██╔════╝ 
-█████╗  ███████║██╔██╗ ██║██║  ███╗ 
+███████╗ █████╗ ███╗   ██╗ ██████╗
+██╔════╝██╔══██╗████╗  ██║██╔════╝
+█████╗  ███████║██╔██╗ ██║██║  ███╗
 ██╔══╝  ██╔══██║██║╚██╗██║██║   ██║
 ██║     ██║  ██║██║ ╚████║╚██████╔╝
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝
 
-██╗  ██╗   ██╗███╗   ██╗ ██████╗ 
-╚██╗██╔╝   ██║████╗  ██║██╔════╝ 
+██╗  ██╗   ██╗███╗   ██╗ ██████╗
+╚██╗██╔╝   ██║████╗  ██║██╔════╝
  ╚███╔╝    ██║██╔██╗ ██║██║  ███╗
  ██╔██╗    ██║██║╚██╗██║██║   ██║
 ██╔╝ ██╗██╗██║██║ ╚████║╚██████╔╝
-╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
 </pre>
-	</div>
-    <style>
-        .ascii-container {
-            font-size: 28px;
-            font-family: 'Fira Mono', monospace;
-            white-space: pre;
-            width: 100%;
-            line-height: 28px;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-        }
+</div>
+<style>
+    .ascii-container {
+        font-family: 'Fira Code', monospace;
+        white-space: pre;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    pre {
+        margin: 0;
+    }
+    .container-big {
+        display: block;
+        font-size: clamp(4px, calc((100vw - 2rem) / 41.4), 28px);
+        line-height: 1;
+    }
+    .container-small {
+        display: none;
+    }
+    @media (max-width: 768px) {
         .container-big {
-            display: block;
-        }
-        .container-small {
             display: none;
         }
-
-        @media (max-width: 768px) {
-            .container-big {
-                display: none;
-            }
-            .container-small {
-                display: block;
-            }
-            .ascii-container {
-                font-size: 2.5vw;
-                line-height: 2.5vw;
-            }
+        .container-small {
+            display: block;
+            font-size: clamp(4px, calc((100vw - 2rem) / 22.2), 28px);
+            line-height: 1;
         }
-    </style>
+    }
+</style>
