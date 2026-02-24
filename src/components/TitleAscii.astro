@@ -1,16 +1,15 @@
 <div class="ascii-container">
     <pre
-        class="container-big">
-███████╗ █████╗ ███╗   ██╗ ██████╗ ██╗  ██╗   ██╗███╗   ██╗ ██████╗
+        class="container-big"
+        aria-hidden="true">███████╗ █████╗ ███╗   ██╗ ██████╗ ██╗  ██╗   ██╗███╗   ██╗ ██████╗
 ██╔════╝██╔══██╗████╗  ██║██╔════╝ ╚██╗██╔╝   ██║████╗  ██║██╔════╝
 █████╗  ███████║██╔██╗ ██║██║  ███╗ ╚███╔╝    ██║██╔██╗ ██║██║  ███╗
 ██╔══╝  ██╔══██║██║╚██╗██║██║   ██║ ██╔██╗    ██║██║╚██╗██║██║   ██║
 ██║     ██║  ██║██║ ╚████║╚██████╔╝██╔╝ ██╗██╗██║██║ ╚████║╚██████╔╝
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
-</pre>
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝</pre>
     <pre
-        class="container-small">
-███████╗ █████╗ ███╗   ██╗ ██████╗
+        class="container-small"
+        aria-hidden="true">███████╗ █████╗ ███╗   ██╗ ██████╗
 ██╔════╝██╔══██╗████╗  ██║██╔════╝
 █████╗  ███████║██╔██╗ ██║██║  ███╗
 ██╔══╝  ██╔══██║██║╚██╗██║██║   ██║
@@ -22,28 +21,32 @@
  ╚███╔╝    ██║██╔██╗ ██║██║  ███╗
  ██╔██╗    ██║██║╚██╗██║██║   ██║
 ██╔╝ ██╗██╗██║██║ ╚████║╚██████╔╝
-╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
-</pre>
+╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝</pre>
 </div>
+
 <style>
     .ascii-container {
-        font-family: ui-monospace, "Courier New";
-        white-space: pre;
         width: 100%;
         display: flex;
         justify-content: center;
+        padding: 0 1rem;
+        box-sizing: border-box;
         overflow: hidden;
     }
-    pre {
+    .ascii-container pre {
+        font-family: "Fira Code", monospace;
+        line-height: 1.2;
         margin: 0;
+        color: currentColor;
+        background: transparent;
     }
     .container-big {
         display: block;
-        font-size: clamp(4px, calc((100vw - 2rem) / 41.4), 28px);
-        line-height: 1;
+        font-size: min(1.2vw, 0.75rem);
     }
     .container-small {
         display: none;
+        font-size: min(2.5vw, 0.75rem);
     }
     @media (max-width: 768px) {
         .container-big {
@@ -51,8 +54,6 @@
         }
         .container-small {
             display: block;
-            font-size: clamp(4px, calc((100vw - 2rem) / 22.2), 28px);
-            line-height: 1;
         }
     }
 </style>
