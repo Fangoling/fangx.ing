@@ -1,11 +1,13 @@
 /* Fira Code — used for monospace/pre/code/ASCII art */
 
 /* symbols2: box-drawing and block-element characters used in ASCII art */
+/* font-display: block prevents any fallback font flash before Fira Code loads,
+   which would cause misalignment since system fonts have different metrics */
 @font-face {
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: block;
     src: url('/fonts/fira-code-symbols2.woff2') format('woff2');
     unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
 }
@@ -14,7 +16,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 500;
-    font-display: swap;
+    font-display: block;
     src: url('/fonts/fira-code-symbols2.woff2') format('woff2');
     unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
 }
@@ -24,7 +26,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: block;
     src: url('/fonts/fira-code-400.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
         U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
@@ -35,7 +37,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 500;
-    font-display: swap;
+    font-display: block;
     src: url('/fonts/fira-code-500.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
         U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
