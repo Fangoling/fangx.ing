@@ -1,0 +1,45 @@
+<div class="status-container">
+    <div class="status-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business-icon lucide-briefcase-business"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+        <p>Working @ Siemens FT</p>
+    </div>
+    <div class="status-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+        <p>Munich, Germany</p>
+    </div>
+</div>
+<style>
+    p {
+        font-size: 18px;
+    }
+    .status-container{
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+    }
+    .status-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        gap: 8px;
+        width: 300px;
+
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        color: var(--font);
+        gap: 20px;
+    }
+    /* Responsive layout change */
+    @media (max-width: 768px) { /* Adjust the width as needed */
+        .horizontal-outer {
+            flex-direction: column; /* Switches to a vertical layout on smaller screens */
+            align-items: center; /* Optional: Center content if desired in column layout */
+        }
+    }
+</style>
